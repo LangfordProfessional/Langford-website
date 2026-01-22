@@ -1,71 +1,347 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>How It Works | Langford Professional Services</title>
-  <meta name="description" content="Understand how Langford Professional Services works with clients through a structured, decision-led delivery plan." />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How It Works | Langford Professional Services</title>
+    <meta
+      name="description"
+      content="A structured delivery plan that takes you from uncertainty to operational clarity — decisions first, execution second."
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="assets/styles.css" />
-</head>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
 
-<body>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header">
-  <div class="container nav">
-    <a class="brand" href="/">LP</a>
+    <header class="site-header" id="top">
+      <div class="container nav">
+        <a class="brand" href="/index.html" aria-label="Langford Professional Services">
+          <img
+            class="brand-logo"
+            src="assets/logo.svg"
+            alt=""
+            onerror="this.style.display='none'; this.parentElement.classList.add('brand--fallback')"
+          />
+          <span class="brand-fallback" aria-hidden="true">LP</span>
+        </a>
 
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navlinks">
-      <span class="nav-toggle__bar"></span>
-      <span class="nav-toggle__bar"></span>
-      <span class="nav-toggle__bar"></span>
-    </button>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navlinks">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="sr-only">Open menu</span>
+        </button>
 
-    <!-- FINAL MENU -->
-    <nav class="navlinks" id="navlinks" aria-label="Primary">
-      <a href="/how-it-works">How It Works</a>
-      <a href="/business-foundations">Business Foundations</a>
-      <a href="/who-its-for">Who It’s For</a>
-      <a href="/about">About</a>
-      <a class="btn btn--primary btn--nav"
-         href="https://meetings-eu1.hubspot.com/tom-langford"
-         target="_blank"
-         rel="noopener">
-        Book a Discovery Call
-      </a>
-    </nav>
-  </div>
-</header>
+        <!-- Use .html explicitly to avoid casing/routing issues -->
+        <nav class="navlinks" id="navlinks" aria-label="Primary">
+          <a href="/how-it-works.html">How It Works</a>
+          <a href="/business-foundations.html">Business Foundations</a>
+          <a href="/who-its-for.html">Who It’s For</a>
+          <a href="/about.html">About</a>
+          <a
+            class="btn btn--primary btn--nav"
+            href="https://meetings-eu1.hubspot.com/tom-langford"
+            target="_blank"
+            rel="noopener"
+          >
+            Book a Discovery Call
+          </a>
+        </nav>
+      </div>
+    </header>
 
-<main class="section section--center">
-  <div class="container narrow">
-    <h1>How It Works</h1>
+    <main id="main">
+      <!-- Page header (simple, calm) -->
+      <section class="section section--center">
+        <div class="container narrow">
+          <p class="kicker">HOW IT WORKS</p>
+          <h1 style="font-family: var(--serif); font-size: clamp(44px, 5vw, 64px); line-height: 1.05; margin: 0 0 14px;">
+            A structured delivery plan<br />from clarity to execution
+          </h1>
 
-    <p class="lead lead--muted">
-      We follow a structured, decision-led delivery plan designed to give clarity before systems are built.
-    </p>
+          <p class="lead lead--muted" style="margin-top: 0;">
+            We start with decisions, not tools. That’s how we avoid the expensive rebuilds that happen
+            when systems are chosen too early.
+          </p>
 
-    <p>
-      This page explains how we work with clients, what to expect at each stage,
-      and how decisions are translated into practical execution.
-    </p>
+          <div class="center-actions">
+            <a
+              class="btn btn--gold"
+              href="https://meetings-eu1.hubspot.com/tom-langford"
+              target="_blank"
+              rel="noopener"
+            >
+              Book a Discovery Call <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
 
-    <div class="center-actions">
-      <a class="btn btn--gold"
-         href="https://meetings-eu1.hubspot.com/tom-langford"
-         target="_blank"
-         rel="noopener">
-        Book a Discovery Call
-      </a>
-    </div>
-  </div>
-</main>
+          <p class="tiny tiny--muted">
+            A short call to confirm fit and recommend the best next step.
+          </p>
+        </div>
+      </section>
 
-<script src="assets/script.js"></script>
-</body>
+      <!-- Why this approach -->
+      <section class="section" style="padding-top: 0;">
+        <div class="container grid-2">
+          <div>
+            <p class="kicker">WHY THIS WORKS</p>
+            <h2 class="h2">Decisions first. Execution second.</h2>
+
+            <p class="body-muted">
+              Most operational pain comes from one root cause: <strong>building before deciding</strong>.
+              A tool gets chosen, a process gets created, then the business evolves, and suddenly everything
+              needs rebuilding.
+            </p>
+
+            <p class="body-muted">
+              Our structured delivery plan removes that decision risk. We help you define how your business
+              should operate, then translate those choices into a practical setup that supports growth.
+            </p>
+          </div>
+
+          <aside class="card">
+            <h3 class="card__title" style="margin-top: 0;">What you get</h3>
+
+            <div class="diff">
+              <div class="diff__row">
+                <span class="icon icon--good" aria-hidden="true">✓</span>
+                <div>
+                  <p class="diff__label">Clarity</p>
+                  <p class="diff__desc">Clear decisions and boundaries for how the business runs</p>
+                </div>
+              </div>
+
+              <div class="diff__row">
+                <span class="icon icon--good" aria-hidden="true">✓</span>
+                <div>
+                  <p class="diff__label">Structure</p>
+                  <p class="diff__desc">A repeatable operating approach you can follow and refine</p>
+                </div>
+              </div>
+
+              <div class="diff__row">
+                <span class="icon icon--good" aria-hidden="true">✓</span>
+                <div>
+                  <p class="diff__label">Confidence</p>
+                  <p class="diff__desc">Less second-guessing, fewer rebuilds, better use of time</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- The stages -->
+      <section class="section section--center" id="stages" style="padding-top: 10px;">
+        <div class="container">
+          <h2>The four stages</h2>
+          <p class="lead lead--muted">
+            A clear sequence that turns uncertainty into an operational setup you can run with.
+          </p>
+
+          <div class="steps">
+            <div class="step">
+              <div class="step__num">01</div>
+              <h3>Discovery</h3>
+              <p class="body-muted">
+                We understand your goals, current constraints, and what “good” looks like.
+              </p>
+              <p class="body-muted" style="margin-bottom: 0;">
+                <strong>Output:</strong> a clear problem statement and recommended pathway.
+              </p>
+            </div>
+
+            <div class="step">
+              <div class="step__num">02</div>
+              <h3>Foundations</h3>
+              <p class="body-muted">
+                We make the key operational decisions: how you want to work, what standards matter,
+                and what needs to be true for scale.
+              </p>
+              <p class="body-muted" style="margin-bottom: 0;">
+                <strong>Output:</strong> documented decisions across the foundations framework.
+              </p>
+            </div>
+
+            <div class="step">
+              <div class="step__num">03</div>
+              <h3>Execution Planning</h3>
+              <p class="body-muted">
+                We translate decisions into an implementable plan - what gets built, in what order, and why.
+              </p>
+              <p class="body-muted" style="margin-bottom: 0;">
+                <strong>Output:</strong> a structured delivery plan for implementation.
+              </p>
+            </div>
+
+            <div class="step">
+              <div class="step__num">04</div>
+              <h3>Delivery</h3>
+              <p class="body-muted">
+                Depending on your needs, we support implementation: setting up tools, building workflows,
+                or guiding your team to roll it out cleanly.
+              </p>
+              <p class="body-muted" style="margin-bottom: 0;">
+                <strong>Output:</strong> an operational setup that’s usable, owned, and scalable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What to expect -->
+      <section class="section" style="padding-top: 10px;">
+        <div class="container grid-2">
+          <div>
+            <p class="kicker">WHAT TO EXPECT</p>
+            <h2 class="h2">Simple, collaborative, and practical</h2>
+
+            <p class="body-muted">
+              You won’t be handed a generic template and left alone. The work is guided, structured,
+              and designed to reduce mental load — especially if you’re building while running the day-to-day.
+            </p>
+
+            <p class="body-muted">
+              We keep momentum by focusing on what matters most: decisions that remove future friction.
+              Tools are selected and implemented only when the “why” is clear.
+            </p>
+          </div>
+
+          <aside class="card">
+            <h3 class="card__title" style="margin-top: 0;">How it feels</h3>
+
+            <div class="diff">
+              <div class="diff__row">
+                <span class="icon icon--good" aria-hidden="true">✓</span>
+                <div>
+                  <p class="diff__label">Less overwhelm</p>
+                  <p class="diff__desc">You know what to do next - and what can wait</p>
+                </div>
+              </div>
+
+              <div class="diff__row">
+                <span class="icon icon--good" aria-hidden="true">✓</span>
+                <div>
+                  <p class="diff__label">More control</p>
+                  <p class="diff__desc">Decisions are yours - we remove the guesswork</p>
+                </div>
+              </div>
+
+              <div class="diff__row">
+                <span class="icon icon--good" aria-hidden="true">✓</span>
+                <div>
+                  <p class="diff__label">Cleaner execution</p>
+                  <p class="diff__desc">Implementation follows a structured delivery plan</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section section--center" style="padding-top: 10px;">
+        <div class="container narrow">
+          <p class="kicker">FAQ</p>
+          <h2>Common questions</h2>
+
+          <div class="card" style="text-align: left; margin-top: 26px;">
+            <h3 style="margin-top: 0;">How long does it take?</h3>
+            <p class="body-muted">
+              It depends on complexity and how quickly decisions can be made. The structured delivery plan is designed
+              to keep progress steady without disrupting day-to-day operations.
+            </p>
+
+            <hr style="border: none; border-top: 1px solid var(--line); margin: 22px 0;" />
+
+            <h3>Do you implement the tools as well?</h3>
+            <p class="body-muted">
+              Implementation support is available where it adds value. Some clients want full setup support,
+              others prefer to implement internally with guidance.
+            </p>
+
+            <hr style="border: none; border-top: 1px solid var(--line); margin: 22px 0;" />
+
+            <h3>Can’t I just set this up myself?</h3>
+            <p class="body-muted" style="margin-bottom: 0;">
+              You can - but most problems don’t come from building the system. They come from choosing the wrong one,
+              or building it without clear boundaries. Our approach removes that decision risk before implementation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section section--center" style="padding-top: 10px;">
+        <div class="container narrow">
+          <h2>Ready to move forward with clarity?</h2>
+          <p class="lead lead--muted">
+            Book a discovery call and we’ll confirm fit, clarify your current stage, and recommend the best next step.
+          </p>
+
+          <div class="center-actions">
+            <a
+              class="btn btn--gold"
+              href="https://meetings-eu1.hubspot.com/tom-langford"
+              target="_blank"
+              rel="noopener"
+            >
+              Book a Discovery Call <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-mark" aria-hidden="true"></div>
+          <p class="footer-desc">
+            Helping businesses make the right operational decisions first, then turn them into systems that work.
+          </p>
+        </div>
+
+        <div>
+          <p class="footer-title">NAVIGATION</p>
+          <ul class="footer-links">
+            <li><a href="/how-it-works.html">How It Works</a></li>
+            <li><a href="/business-foundations.html">Business Foundations</a></li>
+            <li><a href="/who-its-for.html">Who It’s For</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="https://meetings-eu1.hubspot.com/tom-langford" target="_blank" rel="noopener">Discovery Call</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-title">GET IN TOUCH</p>
+          <ul class="footer-links">
+            <li>
+              <a class="footer-cta" href="https://meetings-eu1.hubspot.com/tom-langford" target="_blank" rel="noopener">
+                Book a Discovery Call
+              </a>
+            </li>
+            <li><a href="mailto:hello@langfordprofessional.co.uk">hello@langfordprofessional.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Langford Professional Services. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
 </html>
-
